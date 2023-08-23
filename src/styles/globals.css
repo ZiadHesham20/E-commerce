@@ -1,27 +1,118 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+.wallpaper{
+   background-image: url(../../public/Frame\ 3.png);
+   background-repeat: no-repeat;
+   background-position: 100% 70%;
+   background-size: cover;
+   
+   
+}
+.wallpaper2{
+    background-image: url(../../public/Frame\ 4.png);
+    background-repeat: no-repeat;
+    background-position: 70% 100%;
+    background-size: cover;
+    
+    
+ }
+.btn-color{
+    background-color: #ffd803 !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.index{
+    z-index: 999999999999;
+}
+.cosh{
+    height: 306px;
+    width: 304px !important;
+}
+.offerimage{
+    
+    background-color: #FFDA27;
+    background-image: url('../../public/offers.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.costumewidth{
+    width: 75%;
+}
+.navwidth{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: all 0.5s;
+}
+.toggelOfNav{
+    display: none;
+    transition: all 0.3s;
+}
+.Dnav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 93%;
+    width: 100%;
+}
+.image-aboutus-banner {
+    background-image: url('../../public/wepik-export-20230813231944nsKW.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom:110px;
+ }
+ 
+ .image-aboutus-banner2 {
+    background-image: url('../../public/wepik-export-20230814140848kFcD.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom:110px;
+ }
+.active{
+    color: #FFDA27 !important;
+    transition: all 0.3s;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.focsinput:focus{
+    border-color: #FFDA27 !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: black !important;
+}
+.swiper-wrapper{
+    transition: all 0.9s !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .costumewidth{
+        width: 100% !important;
+    }
+    .offerimage{
+        height: 400px;
+    }
+    .navwidth{
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+    }
 }
